@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logoacaestoy-nav.gif" type="image/x-icon">
+  <meta name="description" content="acaestoy es un sitio dedicado a encontrar mascotas extraviadas. Se pueden publicar mascotas perdidas y mascotas encontradas. Se puede buscar entre las mascotas reportadas, filtrando los resultados, o desde el mapa. Se puede contactar a quienes reportaron mascotas.">
+  <title>acaestoy busqueda de mascotas</title>
+  <!-- Estilos y fuentes del template  -->
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css" type="text/css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css" type="text/css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/theme/css/style.css" type="text/css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/propio/styleForms.css">
+  <link rel="stylesheet" type="text/css" href="assets/propio/features.css">
+  <link rel="stylesheet" type="text/css" href="assets/propio/tablas.css">
+</head>
+
+<body>
+
+  <div align="center"><h1></h1></div>
+  <section class="menu cid-rjRuOstFkw" once="menu" id="menu2-1k">
+      <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="menu-logo">
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              <a href="index.html">
+                <img src="assets/images/logoacaestoy-nav.gif" alt="acaestoy" title="" style="height: 3.8rem;">
+              </a>
+            </span>
+
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item dropdown">
+            <a class="nav-link link text-info dropdown-toggle display-4" href="" data-toggle="dropdown-submenu" aria-expanded="false">
+            Ingresar</a><div class="dropdown-menu"><a class="text-info dropdown-item display-4" href="ingreso.html">Ingreso</a><a class="text-info dropdown-item display-4" href="registro.html">Nueva cuenta</a></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-info display-4" href="busqueda.html">Buscar</a>
+          </li><li class="nav-item"><a class="nav-link link text-info display-4" href="mapa.html">Mapa</a></li></ul>
+
+        </div>
+      </nav>
+  </section>
+
+  <section class="mbr-section form1 cid-rjLlIcDwd3" id="form1-1g">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-12 col-lg-8">
+          <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+            Reporta una mascota.
+          </h2>
+          <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
+            Ingresar un nuevo reporte para una mascota extraviada o encontrada.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="media-container-column col-lg-8" data-form-type="formoid">
+          <div data-form-alert="" hidden="">¡Gracias por completar el reporte!</div>
+
+          <form class="mbr-form" action="" method="POST" data-form-title="Reporte Form">
+
+            <div class="row row-sm-offset">
+              <div class="col-md-12 multi-horizontal" data-for="tipo_repo">
+                <div class="form-group">
+                  <label class="form-control-label" for="tipo_repo"><strong>Tipo de reporte*: </strong></label>
+                  <label class="radio-inline" for="tipo_repo-0"> 
+                    <input type="radio" name="tipo_repo" id="tipo_repo-0" value="EX">Mascota extraviada     
+                  </label>
+                  <label class="radio-inline" for="tipo_repo-1">
+                    <input type="radio" name="tipo_repo" id="tipo_repo-1" value="EN">Mascota encontrada
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+
+              <div class="col-md-3 multi-horizontal" data-for="fecha_reportado">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="fecha_reportado-form1-1g">Fecha*</label>
+                  <input type="date" class="form-control" name="fecha_reportado" data-form-field="date" required="" id="fecha_reportado-form1-1g">
+                </div>
+              </div>
+
+              <div class="col-md-3 multi-horizontal" data-for="departamento">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="departamento-form1-1g">Departamento*</label>
+                  <div>
+                    <select id="departamento" name="departamento" class="form-control" onchange="localidadesChange(this);">
+                      <option value="">Seleccionar</option>
+                      <option value="AR">Artigas</option>
+                      <option value="CA">Canelones</option>
+                      <option value="CL">Cerro Largo</option>
+                      <option value="CO">Colonia</option>
+                      <option value="DU">Durazno</option>
+                      <option value="FL">Flores</option>
+                      <option value="FA">Florida</option>
+                      <option value="LA">Lavalleja</option>
+                      <option value="MA">Maldonado</option>
+                      <option value="MO">Montevideo</option>
+                      <option value="PA">Paysandú</option>
+                      <option value="RN">Río negro</option>
+                      <option value="RI">Rivera</option>
+                      <option value="RO">Rocha</option>
+                      <option value="SA">Salto</option>
+                      <option value="SJ">San José</option>
+                      <option value="SO">Soriano</option>
+                      <option value="TA">Tacuarembó</option>
+                      <option value="TT">Treinta y Tres</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-5 multi-horizontal" data-for="localidad">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="localidad-form1-1g">Localidad/Barrio*</label>
+                  <div>
+                    <select id="localidad" name="localidad" class="form-control">
+                      <option value="0">Seleccionar</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-6 multi-horizontal" data-for="calle">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="calle-form1-1g">Calle*</label>
+                  <input type="text" placeholder="Ejemplo: Br. Artigas, Joaquín Suárez, Calle 34" class="form-control" name="calle" data-form-field="calle" required="" id="calle-form1-1g">
+                  <span class="help-block">Nombre de la calle principal dónde desapareció/encontró a la mascota.</span>  
+                </div>
+              </div>
+              <div class="col-md-6 multi-horizontal" data-for="esquina">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="esquina-form1-1g">Esquina*</label>
+                  <input type="text" placeholder="Ejemplo: Br. Artigas, Joaquín Suárez, Calle 34" class="form-control" name="esquina" data-form-field="esquina" required="" id="esquina-form1-1g">
+                  <span class="help-block">Nombre de la calle que forma esquina con la calle principal que ingresó en el campo anterior.</span>  
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <hr>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-12 multi-horizontal" data-for="nombre">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="nombre-form1-1g">Nombre de la mascota*</label>
+                  <input type="text" placeholder="Ejemplos: Bobby, Sultán, Canela, desconocido." class="form-control" name="nombre" data-form-field="nombre" required="" id="nombre-form1-1g">
+                  <span class="help-block">Ingrese el nombre de la mascota. Si no lo conoce, escriba desconocido.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-4 multi-horizontal" data-for="especie">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="especie-form1-1g">Especie*</label>
+                  <div>
+                    <select id="especie" name="especie" class="form-control" required="" onchange="razaChange(this);">
+                      <option value="">Seleccionar</option>
+                      <option value="PE">Perro</option>
+                      <option value="GA">Gato</option>
+                      <option value="OT">Otros</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="raza">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="raza-form1-1g">Raza*</label>
+                  <div>
+                    <select id="raza" name="raza" class="form-control" required="">
+                      <option value="0">Seleccionar</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="perroOtro">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="perroOtro-form1-1g">Otro</label>
+                  <input type="text" class="form-control" name="perroOtro" data-form-field="perroOtro" id="perroOtro-form1-1g">
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-4 multi-horizontal" data-for="tamaño">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="tamaño-form1-1g">Tamaño*</label>
+                  <div>
+                    <select id="tamaño" name="tamaño" class="form-control" required="">
+                      <option>Seleccionar</option>
+                      <option value="PQ">Pequeño (menos de 10 kg)</option>
+                      <option value="MD">Mediano (entre 10 y 25 kg)</option>
+                      <option value="GD">Grande (entre 25 y 45 kg)</option>
+                      <option value="XG">Extra grande (más de 45 kg)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="edad">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="edad-form1-1g">Edad* (aproximada)</label>
+                  <div>
+                    <select id="edad" name="edad" class="form-control" required="">
+                      <option>Seleccionar</option>
+                      <option value="CA">Cachorro</option>
+                      <option value="JO">Joven</option>
+                      <option value="AD">Adulto</option>
+                      <option value="VI">Viejo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="sexo">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="sexo-form1-1g">Sexo*</label>
+                  <div>
+                    <select id="sexo" name="sexo" class="form-control" required="">
+                      <option>Seleccionar</option>
+                      <option value="HE">Hembra</option>
+                      <option value="MA">Macho</option>
+                      <option value="DE">Desconocido</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-4 multi-horizontal" data-for="color_1">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="color_1-form1-1g">Color primario*</label>
+                  <div>
+                    <select id="color_1" name="color_1" class="form-control" required="">
+                      <option value="NA">Seleccionar</option>
+                      <option value="BL">Blanco</option>
+                      <option value="NG">Negro</option>
+                      <option value="GR">Gris o plateado</option>
+                      <option value="BG">Crema, beige, marrón claro</option>
+                      <option value="MR">Marrón oscuro</option>
+                      <option value="RJ">Rojizo</option>
+                      <option value="AM">Amarillo, rubio, dorado</option>
+                      <option value="AZ">Azul</option>
+                      <option value="VR">Verde</option>
+                      <option value="AN">Anaranjado</option>
+                      <option value="OT">Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="color_2">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="color_2-form1-1g">Color secundario</label>
+                  <div>
+                    <select id="color_2" name="color_2" class="form-control">
+                      <option value="NA">Seleccionar</option>
+                      <option value="BL">Blanco</option>
+                      <option value="NG">Negro</option>
+                      <option value="GR">Gris o plateado</option>
+                      <option value="BG">Crema, beige, marrón claro</option>
+                      <option value="MR">Marrón oscuro</option>
+                      <option value="RJ">Rojizo</option>
+                      <option value="AM">Amarillo, rubio, dorado</option>
+                      <option value="AZ">Azul</option>
+                      <option value="VR">Verde</option>
+                      <option value="AN">Anaranjado</option>
+                      <option value="OT">Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="color_3">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="color_3-form1-1g">Color terciario</label>
+                  <div>
+                    <select id="color_3" name="color_3" class="form-control">
+                      <option value="NA">Seleccionar</option>
+                      <option value="BL">Blanco</option>
+                      <option value="NG">Negro</option>
+                      <option value="GR">Gris o plateado</option>
+                      <option value="BG">Crema, beige, marrón claro</option>
+                      <option value="MR">Marrón oscuro</option>
+                      <option value="RJ">Rojizo</option>
+                      <option value="AM">Amarillo, rubio, dorado</option>
+                      <option value="AZ">Azul</option>
+                      <option value="VR">Verde</option>
+                      <option value="AN">Anaranjado</option>
+                      <option value="OT">Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-4 multi-horizontal" data-for="pelo_largo">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="pelo_largo-form1-1g">Largo del pelaje</label>
+                  <div>
+                    <select id="pelo_largo" name="pelo_largo" class="form-control">
+                      <option value="NA">Seleccionar</option>
+                      <option value="CO">Corto</option>
+                      <option value="ME">Medio</option>
+                      <option value="LA">Largo</option>
+                      <option value="NA">No aplica</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 multi-horizontal" data-for="pelo_tipo">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="pelo_tipo-form1-1g">Tipo de pelaje</label>
+                  <div>
+                    <select id="pelo_tipo" name="pelo_tipo" class="form-control">
+                      <option value="NA">Seleccionar</option>
+                      <option value="LI">Liso</option>
+                      <option value="AL">"Alambre"</option>
+                      <option value="EN">Enrulado</option>
+                      <option value="NA">No aplica</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-12 multi-horizontal" data-for="marcas">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="marcas-form1-1g">Marcas o características distintivas</label>
+                  <input type="text" placeholder="Ejemplos: castrado, con micro chip, sin garras, mancha blanca." class="form-control" name="marcas" data-form-field="marcas" id="marcas-form1-1g">
+                  <span class="help-block">Nota: para los animales encontrados, tal vez quiera retener detalles específicos de modo de poder reconocer a los dueños del animal.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-4 multi-horizontal" data-for="chapa_id">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="chapa-form1-1g"></label>
+                  <label class="checkbox-inline" for="chapa_id-0">
+                    <input type="checkbox" name="chapa_id" data-form-field="chapa_id" id="chapa_id-form1-1g">Chapa identificatoria
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 multi-horizontal" data-for="collar">
+                <div class="form-group">
+                  <label class="checkbox-inline" class="form-control-label mbr-fonts-style display-7" for="collar-form1-1g"></label>
+                  <label class="checkbox-inline" for="collar-0">
+                    <input type="checkbox" name="collar" data-form-field="collar" id="collar-form1-1g">Collar
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-5 multi-horizontal" data-for="collar_color">
+                <div class="form-group">
+                  <input type="text" placeholder="color del collar" class="form-control" name="collar_color" data-form-field="collar_color" id="collar_color-form1-1g">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" data-for="comentarios">
+              <label class="form-control-label mbr-fonts-style display-7" for="comentarios-form1-1g">Comentarios adicionales</label>
+              <textarea type="text" placeholder="Ejemplos: necesidades especiales, condiciones del animal, caracter, comportamiento, recompensa." class="form-control" name="comentarios" rows="7" data-form-field="comentarios" id="comentarios-form1-1g"></textarea>
+            </div>
+
+            <div>
+              <hr>
+            </div>
+
+            <div class="row row-sm-offset">
+              <div class="col-md-12 multi-horizontal" data-for="imagen">
+                <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7" for="imagen-form1-1g">Seleccione la foto de la mascota para agregar en el reporte*</label>
+                  <input type="file" accept="image/png, image/jpeg, image/gif" class="form-control" name="imagen" required="" data-form-field="imagen" id="imagen-form1-1g">
+                </div>
+              </div>
+            </div>
+
+            <div><hr></div>
+
+            <div>
+              <p><i>Todos los campos marcados con * son obligatorios<i></p>
+            </div>
+
+
+
+            <span class="input-group-btn">
+              <a href="reporte_exito.html" class="btn btn-primary btn-form display-4">ENVIAR REPORTE</a>
+            </span>
+
+              
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cid-rjqz4M3P0e" id="footer5-u">
+
+
+    <div class="container">
+      <div class="footer-lower">
+        <div class="media-container-row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+        <div class="media-container-row mbr-white">
+          <div class="col-md-4">
+            <div class="social-list">
+              <div class="soc-item">
+                <a href="https://twitter.com" target="_blank">
+                  <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="https://www.facebook.com" target="_blank">
+                  <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="https://instagram.com" target="_blank">
+                  <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                </a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-md-6 copyright">
+            <p class="mbr-text align-right mbr-fonts-style display-7">
+            Desarrollado por</p>
+          </div>
+          <div class="col-md-2">
+            <div class="media">                        
+              <img src="assets/images/logosoftymar150px-pie.gif" alt="softymar" title="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/popper/popper.min.js"></script>
+  <script type="text/javascript" src="assets/tether/tether.min.js"></script>
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script type="text/javascript" src="assets/dropdown/js/script.min.js"></script>
+  <script type="text/javascript" src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/script.js"></script>
+  <script type="text/javascript" src="assets/mbr-popup-btns/mbr-popup-btns.js"></script>
+  <script type="text/javascript" src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script type="text/javascript" src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script type="text/javascript" src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script type="text/javascript" src="assets/propio/dptos.js"></script>
+  <script type="text/javascript" src="assets/propio/razas.js"></script>
+
+  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+</body>
+</html>
